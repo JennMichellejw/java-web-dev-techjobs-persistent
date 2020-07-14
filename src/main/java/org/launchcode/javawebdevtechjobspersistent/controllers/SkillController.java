@@ -23,6 +23,12 @@ public class SkillController {
     @Autowired
     private EmployerRepository employerRepository;
 
+    @GetMapping
+    public String displayAllSkillss(Model model) {
+        model.addAttribute("skills", skillRepository.findAll());
+        return "skills/index";
+    }
+
     @GetMapping("add")
     public String displayAddSkillForm(Model model) {
         model.addAttribute("employers", employerRepository.findAll());
@@ -39,6 +45,7 @@ public class SkillController {
             return "skills/add";
         }
         skillRepository.save(newSkill);
+
         return "redirect:";
     }
 
