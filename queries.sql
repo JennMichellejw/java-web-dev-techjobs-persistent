@@ -5,7 +5,7 @@ SELECT * FROM techjobs.columns;
 ## Part 2: Test it with SQL
 
 SELECT * FROM employer
-WHERE location = "St.louis"
+WHERE location = "Saint Louis City"
 
 ## Part 3: Test it with SQL
 

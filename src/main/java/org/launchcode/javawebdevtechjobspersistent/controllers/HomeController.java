@@ -85,16 +85,6 @@ public class HomeController {
 
         }
 
-//        List<Skill> skillObjs = (List<Skill>) skillRepository.findAllById(skills);
-//        if (!skillObjs.isEmpty()) {
-//            newJob.setSkills(skillObjs);
-//        } else {
-//            return "redirect:";
-//        }
-
-
-//        return "redirect:";
-
 
     @GetMapping("view/{jobId}")
     public String displayViewJob(Model model, @PathVariable int jobId) {
